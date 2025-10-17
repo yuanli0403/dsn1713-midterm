@@ -1,21 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
 /* Set custom variables here */
+:root {
+  --bs-primary: #2e483a;
+  --bs-primary-rgb: 46, 72, 58;
+  --bs-light: #F6F3ED;
+  --bs-body-bg: #F6F3ED;
 
+  --ff-ss:"Sarala", sans-serif;
+  --ff-s: "Merriweather", serif;
 
-
+}
 
 
 .navbar-brand {
   color: #F6F3ED;
 }
 
+.navbar-toggler {
+  color: var(--bs-light);
+}
+
+.btn {
+  background-color: var(--bs-primary);
+  font-family: var(--ff-ss);
+  color: var(--bs-light);
+}
+
 body {
-  font-family: "Sarala", sans-serif;
+  font-family: var(--ff-ss);
+  background-color: #F6F3ED;
 }
 
 h1, h2, h3 {
-  font-family: "Merriweather", serif;
+  font-family: var(--ff-s)
 }
 
 #hero {
@@ -23,7 +41,7 @@ h1, h2, h3 {
   background-color: #E4E6DB;
   background-image: url(../images/hero-bg-img.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -41,6 +59,11 @@ h1, h2, h3 {
 #cta .d-flex {
   height: 400px;
 }
+
+.row {
+  flex-wrap: wrap;
+}
+
 
 section:not(#hero):not(#cta){
   padding: 60px 0;
