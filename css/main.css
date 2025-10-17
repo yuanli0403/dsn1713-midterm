@@ -21,6 +21,15 @@
   color: var(--bs-light);
 }
 
+.navbar .nav-link {
+  color: var(--bs-light);
+}
+
+.navbar .nav-link.active {
+  color: var(--bs-light);
+}
+
+
 .btn {
   background-color: var(--bs-primary);
   font-family: var(--ff-ss);

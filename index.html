@@ -12,9 +12,8 @@
   <body>
 
     <header class="sticky-top">
-      <!--add margin side-->
       <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="container-fluid">
+        <div class="container-fluid px-5">
           <a class="navbar-brand" href="#">
             <img src="daily-dish-logo.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
             
@@ -69,20 +68,20 @@
           <div class="row text-center">
               <div class="col-lg-4 col-12">
                 <img src="images/meal.svg" alt="" width="100" height="auto">              
-                <h3>Choose Your Menu</h3>
+                <h3 class="mt-4">Choose Your Menu</h3>
                 <p>Explore a wide variety of delicious meal options, tailored to your dietary preferences—whether you're vegan, low-carb, or just looking for wholesome comfort food.</p>
               </div>
 
               <div class="col-lg-4 col-12">
                 <img src="images/vegetables.svg" alt="" width="100" height="auto">   
-                <h3>Fresh Ingredients Delivered</h3>
+                <h3 class="mt-4">Fresh Ingredients Delivered</h3>
                  <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
               </div>
            
               <div class="col-lg-4 col-12">
                   <img src="images/plate-fork-spoon.svg" alt="" width="100" height="auto">
   
-                <h3>Cook & Enjoy</h3>
+                <h3 class="mt-4">Cook & Enjoy</h3>
                 <p>Our easy-to-follow recipes mean you’ll have a mouthwatering, home-cooked meal ready in under 30 minutes—no kitchen skills required!</p>
               </div>
 
@@ -126,7 +125,7 @@
       <section id="customers" class="bg-primary">
         <div class="container-fluid text-center text-light">
           <div>
-            <h2>What Our Customers Are Saying</h2>
+            <h2 class="mb-5">What Our Customers Are Saying</h2>
 
             <div>
               <div class="row">
@@ -196,10 +195,50 @@
       </section>
 
 
-      <section>
-        <div>
+      <section id="question">
+        <div class="container">
           <div>
-            <h2>Questions? We Have Answers</h2>
+            <h2 class="mb-5 text-center">Questions? We Have Answers</h2>
+
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Can I pause or cancel my subscription?</button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Absolutely! You can pause, modify, or cancel your subscription at any time through your account dashboard.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How long do the meals last?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+            Our meals stay fresh in your fridge for up to 5 days. Each meal comes with a ‘best by’ date for optimal freshness.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Do you offer meals for specific diets?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+            Yes! We offer meals for a variety of diets, including vegetarian, keto, paleo, and gluten-free. -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
             <!-- Include accordian component that best matches what is included in the provided screenshot.
 
@@ -226,10 +265,10 @@
 
 
       <section id="cta">
-        <div>
-          <div>
-            <h2>Join Thousands of Time-Savers – Start Eating Better Today!</h2>
-            <button>Sign Up and Get 30% Off Your First Week</button>
+        <div class="d-flex justify-content-center text-center text-light">
+          <div class="container-fluid align-self-center">
+            <h2 class="mb-4">Join Thousands of Time-Savers – Start Eating Better Today!</h2>
+            <button type="button" class="btn">Sign Up and Get 30% Off Your First Week</button>
           </div>
         </div>
       </section>
@@ -239,18 +278,18 @@
 
     
     <footer>
-      <div>
-        <div>
-          <div>
+      <div class="navbar sticky-bottom bg-primary text-light">
+        <div class="container d-flex align-items-center">
+          <div class="d-flex align-items-center">
             <a href="/">
-              <img src="images/daily-dish-logo.svg" alt="Logo" width="35" height="auto">
+              <img src="daily-dish-logo.svg" alt="Logo" width="35" height="auto">
             </a>
             <span>&copy; 2025 Company, Inc</span>
           </div>
       
-          <ul>
-            <li><a href="#"><img src="images/instagram.svg" alt="Instagram logo" width="35" height="auto"></a></li>
-            <li><a href="#"><img src="images/facebook.svg" alt="Facebook logo" width="35" height="auto"></a></li>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a href="#"><img src="images/instagram.svg" alt="Instagram logo" width="35" height="auto"></a></li>
+            <li class="ms-3"><a href="#"><img src="images/facebook.svg" alt="Facebook logo" width="35" height="auto"></a></li>
           </ul>
         </div>    
       </div>
